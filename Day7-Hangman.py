@@ -1,4 +1,4 @@
-#Step 1
+from replit import clear
 import random
 from Day7_1_hangman_words import word_list
 import Day7_1_hangman_art
@@ -19,6 +19,7 @@ print(Day7_1_hangman_art.logo)
 
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
+    clear()
     if guess in display:
         print(f"You've already guessed '{guess}'.")
     else:
