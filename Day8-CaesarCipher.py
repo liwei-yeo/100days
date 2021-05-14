@@ -1,6 +1,6 @@
-import day8_1_art
+import Day8_1_art
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-print(day8_1_art.logo)
+print(Day8_1_art.logo)
 
 
 def ceasar(cypherdir, textstr, shiftamt):
@@ -29,7 +29,8 @@ while run:
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
     ceasar(cypherdir=direction, textstr=text, shiftamt=shift)
-    if input("Run again? y/n ".lower()) == "n":
+    if input("Run again? y/n \n".lower()) == "n":
+        print("Goodbye.")
         run = False
 
 # def encrypt(textstr, shiftamt):
