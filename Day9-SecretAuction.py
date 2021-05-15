@@ -1,6 +1,5 @@
 from replit import clear
 from Day9_1_art import logo
-#HINT: You can call clear() to clear the output in the console.
 
 print(f"{logo}\nWelcome to the secret auction program.")
 p_status = True
