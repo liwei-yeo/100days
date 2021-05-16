@@ -101,6 +101,9 @@ def is_bust(hand):
 
 def blackjack():
     replay = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
+    if replay == "n":
+        return
+
     clear()
     print(logo)
     hands = {
@@ -111,6 +114,7 @@ def blackjack():
     hands["player"] = draw_card(hands["player"])
     hands["player"] = draw_card(hands["player"])
     hands["com"] = draw_card(hands["com"])
+
     hands["com"] = draw_card(hands["com"])
 
     # print hand and 1 com
