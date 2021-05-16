@@ -114,7 +114,6 @@ def blackjack():
     hands["player"] = draw_card(hands["player"])
     hands["player"] = draw_card(hands["player"])
     hands["com"] = draw_card(hands["com"])
-
     hands["com"] = draw_card(hands["com"])
 
     # print hand and 1 com
