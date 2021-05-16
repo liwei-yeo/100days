@@ -125,7 +125,6 @@ def blackjack():
     cant_draw = False
     while not cant_draw and input("Type 'y' to get another card, type 'n' to pass: ") == 'y':
         hands["player"] = draw_card(hands["player"])
-        check_ace(hands["player"])
         declare_cards(hands["player"], hands["com"])
         cant_draw = is_bust(hands["player"])
 
