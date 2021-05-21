@@ -25,10 +25,9 @@ MENU = {
 }
 
 
-def coffee(stored_resources, stored_wallet):
+def coffee(stored_resources, stored_wallet, power):
     order_cleared = False
     payment_cleared = False
-
     ##### ORDER
     request = input("What would you like? (espresso/latte/cappuccino): ").lower()
     request_list = {}
@@ -37,6 +36,8 @@ def coffee(stored_resources, stored_wallet):
               f'Milk: {stored_resources["milk"]}ml\n'
               f'Coffee: {stored_resources["coffee"]}g\n'
               f'Money: ${stored_wallet}')
+    elif request == "off":
+        power = False
     elif request == "espresso" or request == "latte" or request == "cappuccino":
         # load order
         request_list = MENU[request]
@@ -88,7 +89,7 @@ def coffee(stored_resources, stored_wallet):
         new_resource = stored_resources
         new_wallet = stored_wallet
 
-    return [new_resource,new_wallet]
+    return [new_resource,new_wallet, power]
 
 
 wallet = 0
@@ -97,7 +98,8 @@ resources = {
     "milk": 200,
     "coffee": 100,
 }
-machine_storage = [resources,wallet]
 powered = True
+machine_storage = [resources, wallet, powered]
 while powered:
-    machine_storage = coffee(machine_storage[0], machine_storage[1])
+    machine_storage = coffee(machine_storage[0], machine_storage[1], machine_storage[2])
+    powered = machine_storage[2]
