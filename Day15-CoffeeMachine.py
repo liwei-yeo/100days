@@ -29,7 +29,7 @@ def coffee(stored_resources, stored_wallet, power):
     order_cleared = False
     payment_cleared = False
     ##### ORDER
-    request = input("What would you like? (espresso/latte/cappuccino): ").lower()
+    request = input("What would you like? (espresso/latte/cappuccino) (admin: report/off): ").lower()
     request_list = {}
     if request == "report":
         print(f'Water: {stored_resources["water"]}ml\n'
