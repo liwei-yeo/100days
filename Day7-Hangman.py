@@ -1,6 +1,6 @@
 from replit import clear
 import random
-from Day7_2_hangman_words import word_list
+from Day7_1_hangman_words import word_list
 import Day7_1_hangman_art
 # from Day7_1_hangman_art import stages, logo
 

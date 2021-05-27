@@ -1,6 +1,6 @@
-from Day16_2_menu import Menu
+from Day16_1_menu import Menu
 from Day16_1_coffee_maker import CoffeeMaker
-from Day16_3_money_machine import MoneyMachine
+from Day16_1_money_machine import MoneyMachine
 
 # my_menu = Menu()
 # print(my_menu.get_items())

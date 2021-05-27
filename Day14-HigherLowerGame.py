@@ -1,5 +1,5 @@
 from Day14_1_art import logo, vs
-from Day14_2_game_data import data
+from Day14_1_game_data import data
 import random
 from replit import clear
 

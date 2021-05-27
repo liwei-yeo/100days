@@ -1,6 +1,6 @@
-from Day17_2_question_model import Question
+from Day17_1_question_model import Question
 from Day17_1_data import question_data
-from Day17_3_quiz_brain import QuizBrain
+from Day17_1_quiz_brain import QuizBrain
 
 
 question_bank = []
