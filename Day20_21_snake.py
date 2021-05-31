@@ -1,21 +1,27 @@
 from turtle import Turtle
-STARTING_X = [(0, 0), (-20, 0), (-40, 0)]
+STARTING_POSITION = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
+
 
 class Snake:
     def __init__(self):
-        self.body_len = 3
         self.snake_list = []
         self.generate()
         self.head = self.snake_list[0]
 
     def generate(self):
-        for segment in range(0, self.body_len):
-            new_segment = Turtle("square")
-            new_segment.color("white")
-            new_segment.penup()
-            new_segment.goto(STARTING_X[segment])
-            self.snake_list.append(new_segment)
+        for position in STARTING_POSITION:
+            self.add_segment(position)
+
+    def add_segment(self, position):
+        new_segment = Turtle("square")
+        new_segment.color("white")
+        new_segment.penup()
+        new_segment.goto(position)
+        self.snake_list.append(new_segment)
+
+    def extend(self):
+        self.add_segment(self.snake_list[-1].pos())
 
     def move(self):
         # starting from last segment, goto the previous segment
