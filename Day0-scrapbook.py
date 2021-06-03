@@ -10,5 +10,5 @@
 # with open("Day20_21_highscore.txt", mode="w") as file:
 #     file.write("New text.")
 
-# with open("new_file.txt", mode="a") as file:
+# with open("../../Desktop/my_file.txt", mode="a") as file:
 #     file.write("\nNew text.")
