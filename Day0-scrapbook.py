@@ -12,3 +12,9 @@
 
 # with open("../../Desktop/my_file.txt", mode="a") as file:
 #     file.write("\nNew text.")
+
+
+import pandas
+data = pandas.read_csv("./Day25_50_states.csv")
+for state in data.state:
+    print(state)
