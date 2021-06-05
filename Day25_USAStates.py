@@ -67,10 +67,10 @@ while game_is_on:
         print("no")
 
 
-missing = []
-for state in data.state:
-    if state not in answered_list:
-        missing.append(state)
+missing = [state for state in data.state if state not in answered_list]
+# for state in data.state:
+#     if state not in answered_list:
+#         missing.append(state)
 missing_series = pandas.Series(missing)
 missing_series.to_csv("Day25_states_to_learn.csv")
 
