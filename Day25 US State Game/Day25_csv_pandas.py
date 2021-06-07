@@ -1,6 +1,6 @@
 import pandas
 
-data = pandas.read_csv("./Day25_2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
+data = pandas.read_csv("Day25_2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
 
 colour_series = data["Primary Fur Color"]
 colour_list = colour_series.unique().tolist()

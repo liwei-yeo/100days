@@ -7,10 +7,10 @@
 # Hint2: This method will also help you: https://www.w3schools.com/python/ref_string_replace.asp
 # Hint3: THis method will help you: https://www.w3schools.com/python/ref_string_strip.asp
 
-with open("./Day24_Input/Letters/starting_letter.txt") as file:
+with open("Day24_Input/Letters/starting_letter.txt") as file:
     template = file.read()
 
-with open("./Day24_Input/Names/invited_names.txt") as file:
+with open("Day24_Input/Names/invited_names.txt") as file:
     # readlines returns as list of lines
     namelist = file.readlines()
 
