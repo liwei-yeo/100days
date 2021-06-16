@@ -15,6 +15,6 @@
 
 
 import pandas
-data = pandas.read_csv("Day25 US State Game/Day25_50_states.csv")
+data = pandas.read_csv("Day25 CSV Pandas - US State Game/Day25_50_states.csv")
 for state in data.state:
     print(state)
